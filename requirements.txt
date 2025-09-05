@@ -230,7 +230,7 @@ patsy==0.5.3
 pep8==1.7.1
 pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
 pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
-Pillow==9.4.0
+Pillow==10.0.1
 pkginfo @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_d1oq9rhye6/croot/pkginfo_1679431178842/work
 platformdirs==4.2.1
 plotly @ file:///Users/cbousseau/work/recipes/ci_py311/plotly_1677953301864/work
@@ -295,7 +295,6 @@ QtAwesome @ file:///Users/cbousseau/work/recipes/ci_py311/qtawesome_167796178178
 qtconsole @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_86g4aht18r/croot/qtconsole_1681394233851/work
 QtPy @ file:///Users/cbousseau/work/recipes/ci_py311/qtpy_1677925820115/work
 queuelib==1.5.0
-redis==5.0.0
 regex @ file:///Users/cbousseau/work/recipes/ci_py311/regex_1677961821876/work
 requests==2.32.3
 requests-file @ file:///Users/ktietz/demo/mc3/conda-bld/requests-file_1629455781986/work
@@ -402,3 +401,8 @@ zict @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_06f3l
 zipp @ file:///Users/cbousseau/work/recipes/ci_py311/zipp_1677907997878/work
 zope.interface @ file:///Users/cbousseau/work/recipes/ci_py311/zope.interface_1678055276546/work
 zstandard @ file:///Users/cbousseau/work/recipes/ci_py311_2/zstandard_1678996192313/work
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.4.2
+python-multipart==0.0.6
+asyncio-throttle==1.0.2
