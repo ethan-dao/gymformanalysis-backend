@@ -18,8 +18,8 @@ from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 import aiofiles
 
-from objdetect_async import AsyncPullUpDetector
-from rnn_optimized import OptimizedPullUpRNN
+from src.objdetect_async import AsyncPullUpDetector
+from src.rnn_optimized import OptimizedPullUpRNN
 
 # Logging config
 logging.basicConfig(level=logging.INFO)

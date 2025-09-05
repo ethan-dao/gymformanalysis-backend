@@ -438,7 +438,7 @@ def prepare_training_data(video_dir: str, sequence_length: int = 10,
                          test_size: float = 0.2) -> Tuple[np.ndarray, ...]:
     """Prepare training data from video directory"""
     
-    from objdetect_async import AsyncPullUpDetector
+    from src.objdetect_async import AsyncPullUpDetector
     
     detector = AsyncPullUpDetector()
     all_sequences = []
