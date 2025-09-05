@@ -1,10 +1,11 @@
-Pull-Up Detection System
+# Pull-Up Detection System
 A computer vision and machine learning system that automatically detects and analyzes pull-up exercises using pose estimation and neural networks.
-## Overview
-This project combines Google's MediaPipe pose estimation with recurrent neural networks to provide real-time pull-up form analysis and repetition counting. The system can detect exercise phases, count repetitions accurately, and identify form issues to help users improve their workout technique.
-## Features
 
-## Real-time Pull-Up Detection: Automatically counts pull-up repetitions in video input
+# Overview
+This project combines Google's MediaPipe pose estimation with recurrent neural networks to provide real-time pull-up form analysis and repetition counting. The system can detect exercise phases, count repetitions accurately, and identify form issues to help users improve their workout technique.
+
+# Features
+Real-time Pull-Up Detection: Automatically counts pull-up repetitions in video input
 Form Analysis: Identifies lapses in form and provides feedback on exercise technique
 Phase Detection: Recognizes different stages of the pull-up movement (hang, pull, peak, descent)
 REST API: Easy integration with web applications through HTTP endpoints
@@ -48,7 +49,7 @@ Supports standard REST operations (GET, POST, PUT, DELETE)
 Enables frontend applications to access backend functionality
 Decouples the web interface from the core detection system
 
-## Installation
+# Installation
 Prerequisites
 
 Python 3.8+
