@@ -1,12 +1,59 @@
-## objdetect.py
-    Used Google Mediapipe API (computer vision API model) and general object detection and computer vision methods to detect pose estimation (position of arms, wrists, etc). Analyzed pose estimation landmarks 
-    and defined thresholds for certain stages of the pull-up to accurately detect number of repetitions and the different phases of the exercise. Defined functions to calculate angles, analyze frames in video, 
-    and start and stop video capture. Used these thresholds to label the different phases of the exercise and number of repetitions for our RNN.
+Pull-Up Detection System
+A computer vision and machine learning system that automatically detects and analyzes pull-up exercises using pose estimation and neural networks.
+## Overview
+This project combines Google's MediaPipe pose estimation with recurrent neural networks to provide real-time pull-up form analysis and repetition counting. The system can detect exercise phases, count repetitions accurately, and identify form issues to help users improve their workout technique.
+## Features
 
-## rnn.py
-    Define a recurrent neural network to detect patterns in pull up form, using the labels from objdetect.py to detect various lapses in form or number of pull-up repetitions in newer videos that the user inputs.
-    Uses transfer learning techniques by using the Mediapipe API to handle feature extraction, while the RNN focuses on recognizing sequences of these pre-labeled poses to improve accuracy in detect repetitions and 
-    stages of a pull-up in the user's video input.
+## Real-time Pull-Up Detection: Automatically counts pull-up repetitions in video input
+Form Analysis: Identifies lapses in form and provides feedback on exercise technique
+Phase Detection: Recognizes different stages of the pull-up movement (hang, pull, peak, descent)
+REST API: Easy integration with web applications through HTTP endpoints
+Transfer Learning: Leverages MediaPipe's pre-trained models for robust pose estimation
 
-## API
-I'm gonna make an API so I can make a web app that doesn't have to access the back end; it will be a Rest API (POST, GET, etc.)
+# Architecture
+## Object Detection Module (objdetect.py)
+
+Utilizes Google MediaPipe API for pose estimation
+Analyzes body landmarks (arms, wrists, shoulders, etc.)
+Defines threshold-based detection for pull-up phases
+Provides labeled training data for the neural network
+Handles video capture and frame analysis
+
+Key Functions:
+
+Angle calculation between body joints
+Frame-by-frame pose analysis
+Video capture management
+Exercise phase classification
+
+## Neural Network Module (rnn.py)
+
+Implements a Recurrent Neural Network for sequence recognition
+Processes pose estimation data to detect patterns in pull-up form
+Uses transfer learning with MediaPipe for feature extraction
+Focuses on temporal sequence analysis for improved accuracy
+Classifies exercise quality and counts repetitions
+
+Features:
+
+Pattern recognition in pull-up sequences
+Form quality assessment
+Repetition counting validation
+Temporal analysis of movement patterns
+
+## REST API
+
+Provides HTTP endpoints for web application integration
+Supports standard REST operations (GET, POST, PUT, DELETE)
+Enables frontend applications to access backend functionality
+Decouples the web interface from the core detection system
+
+## Installation
+Prerequisites
+
+Python 3.8+
+OpenCV
+MediaPipe
+TensorFlow/PyTorch (for RNN implementation)
+NumPy
+Flask/FastAPI (for REST API)
