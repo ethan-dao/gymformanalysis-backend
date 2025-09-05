@@ -5,15 +5,15 @@ A computer vision and machine learning system that automatically detects and ana
 This project combines Google's MediaPipe pose estimation with recurrent neural networks to provide real-time pull-up form analysis and repetition counting. The system can detect exercise phases, count repetitions accurately, and identify form issues to help users improve their workout technique.
 
 # Features
-Real-time Pull-Up Detection: Automatically counts pull-up repetitions in video input
-Form Analysis: Identifies lapses in form and provides feedback on exercise technique
-Pose Detection: Uses Google MediaPipe and custom thresholds to identify body landmarks, recognizes different stages of pull-up movement (hang, pull, peak, descent)
-Recurrent Neural Network (RNN): Optimized model detects sequences of pull-up movements for accurate repetition and phase counting
-Async Processing: Efficient video processing with asynchronous pipelines
-REST API: Supports video upload, result retrieval, live stream analysis, and exercise statistics
-Caching: Redis integration to store analysis results and speed up repeated requests
-Performance Optimization: TensorFlow optimizations including GPU memory growth and XLA compilation
-Transfer Learning: Leverages MediaPipe's pre-trained models for robust pose estimation
+- Real-time Pull-Up Detection: Automatically counts pull-up repetitions in video input
+- Form Analysis: Identifies lapses in form and provides feedback on exercise technique
+- Pose Detection: Uses Google MediaPipe and custom thresholds to identify body landmarks, recognizes different stages of pull-up movement (hang, pull, peak, descent)
+- Recurrent Neural Network (RNN): Optimized model detects sequences of pull-up movements for accurate repetition and phase counting
+- Async Processing: Efficient video processing with asynchronous pipelines
+- REST API: Supports video upload, result retrieval, live stream analysis, and exercise statistics
+- Caching: Redis integration to store analysis results and speed up repeated requests
+- Performance Optimization: TensorFlow optimizations including GPU memory growth and XLA compilation
+- Transfer Learning: Leverages MediaPipe's pre-trained models for robust pose estimation
 
 # Architecture
 ## Object Detection Module (objdetect.py)
