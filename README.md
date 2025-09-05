@@ -18,33 +18,33 @@ This project combines Google's MediaPipe pose estimation with recurrent neural n
 # Architecture
 ## Object Detection Module (objdetect.py)
 
-Utilizes Google MediaPipe API for pose estimation
-Analyzes body landmarks (arms, wrists, shoulders, etc.)
-Defines threshold-based detection for pull-up phases
-Provides labeled training data for the neural network
-Handles video capture and frame analysis
+- Utilizes Google MediaPipe API for pose estimation
+- Analyzes body landmarks (arms, wrists, shoulders, etc.)
+- Defines threshold-based detection for pull-up phases
+- Provides labeled training data for the neural network
+- Handles video capture and frame analysis
 
-Key Functions:
+### Key Functions:
 
-Angle calculation between body joints
-Frame-by-frame pose analysis
-Video capture management
-Exercise phase classification
+- Angle calculation between body joints
+- Frame-by-frame pose analysis
+- Video capture management
+- Exercise phase classification
 
 ## Neural Network Module (rnn.py)
 
-Implements a Recurrent Neural Network for sequence recognition
-Processes pose estimation data to detect patterns in pull-up form
-Uses transfer learning with MediaPipe for feature extraction
-Focuses on temporal sequence analysis for improved accuracy
-Classifies exercise quality and counts repetitions
+- Implements a Recurrent Neural Network for sequence recognition
+- Processes pose estimation data to detect patterns in pull-up form
+- Uses transfer learning with MediaPipe for feature extraction
+- Focuses on temporal sequence analysis for improved accuracy
+- Classifies exercise quality and counts repetitions
 
-Features:
+### Features:
 
-Pattern recognition in pull-up sequences
-Form quality assessment
-Repetition counting validation
-Temporal analysis of movement patterns
+- Pattern recognition in pull-up sequences
+- Form quality assessment
+- Repetition counting validation
+- Temporal analysis of movement patterns
 
 ## REST API
 
@@ -53,15 +53,14 @@ Supports standard REST operations (GET, POST, PUT, DELETE)
 Enables frontend applications to access backend functionality
 Decouples the web interface from the core detection system
 
-API Endpoints
-Endpoint	Method	Description
-/analyze-video	POST	Upload a video for pull-up analysis
-/results/{video_id}	GET	Retrieve analysis results for a video
-/status/{video_id}	GET	Check current processing status
-/live-stream/start	POST	Start live stream analysis
-/live-stream/{stream_id}	DELETE	Stop live stream analysis
-/exercise-stats	GET	Retrieve aggregated exercise stats
-/health	GET	Check API and service health
+### API Endpoints
+- /analyze-video	POST	Upload a video for pull-up analysis
+- /results/{video_id}	GET	Retrieve analysis results for a video
+- /status/{video_id}	GET	Check current processing status
+- /live-stream/start	POST	Start live stream analysis
+- /live-stream/{stream_id}	DELETE	Stop live stream analysis
+- /exercise-stats	GET	Retrieve aggregated exercise stats
+- /health	GET	Check API and service health
 
 # Installation
 Prerequisites
