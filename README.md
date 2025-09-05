@@ -1,6 +1,5 @@
 # Pull-Up Detection System
 A computer vision and machine learning system that automatically detects and analyzes pull-up exercises using pose estimation and neural networks.
-Complete project with front-end: https://pullup-analyzer-hackathon.vercel.app
 
 # Overview
 This project combines Google's MediaPipe pose estimation with recurrent neural networks to provide real-time pull-up form analysis and repetition counting. The system can detect exercise phases, count repetitions accurately, and identify form issues to help users improve their workout technique.
